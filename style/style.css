@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 10px 0;
+}
+.header__nav{
+    border: 1px solid #242424;
+    background: #fff;
+}
+.header__nav-list{
+    display: flex;
+    gap: 80px;
+}
+.header__nav-link{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #242424;
+    transition: 300ms;
+}
+.header__nav-link:hover::after{
+    content: '';
+    display: block;
+    max-width: 55px;
+    width: 100%;
+    height: 2px;  
+    background: #242424;  
+}
+.intro{
+    background: url(../images/mount.jpg) no-repeat center /cover;
+    height: 666px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 66px;
+}
+.intro__title{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 80px;
+    color: #242424;
+}
+.intro__link{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+    border: 2px solid #242424;
+    max-width: 263px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
+.info__about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+.info__about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info__about-right-title{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 40px;
+    color: #242424;
+    position: relative;
+    max-width: 173px;
+    width: 100%;
+}
+.info__about-right-title::after{
+    content: '';
+    max-width: 168px;
+    width: 100%;
+    height: 2px;
+    background: #242424;
+    position: absolute;
+    top: 22px;
+    right: -185px;
+    
+}
+.info__about-right-text{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #242424;
+}
+.info__catalog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.info__catalog-left-title{
+    font-family: 'Mono';
+    max-width: 152px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 40px;
+    color: #242424;
+    position: relative;
+}
+.info__catalog-left-title::after{
+    content: '';
+    max-width: 168px;
+    width: 100%;
+    height: 2px;
+    background: #242424;
+    position: absolute;
+    top: 24px;
+    right: -185px;
+}
+.info__catalog-left-text{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #242424;
+}
+.info__catalog-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info__catalog-left-link{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+    border: 2px solid #242424;
+    max-width: 263px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links{
+    border: 1px solid #242424; 
+    background: #fbfbfb;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.footer__title{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 90%;
+    color: #242424;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+}
+.footer__box{
+    max-width: 268px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__contacts{
+    max-width: 268px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__contacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+.footer__contacts-link{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 90%;
+    color: #242424;
+    position: relative;
+    padding-left: 10px;
+}
+.footer__follow{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 20px;
+}
+.footer__icons{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.footer__box-text{
+    font-family: 'Mono';
+    font-weight: 400;
+    font-size: 16px;
+    color: #242424;
+}
+.footer__contacts-link::before{
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #242424;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
